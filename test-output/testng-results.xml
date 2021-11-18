@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-17T20:16:38 CLST" name="Pruebas Trello" finished-at="2021-11-17T20:17:46 CLST" duration-ms="68099">
+    <groups>
+    </groups>
+    <test started-at="2021-11-17T20:16:38 CLST" name="Test login correcto" finished-at="2021-11-17T20:17:30 CLST" duration-ms="52112">
+      <class name="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto">
+        <test-method is-config="true" signature="iniciatizacio()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:16:38 CLST" name="iniciatizacio" finished-at="2021-11-17T20:16:47 CLST" duration-ms="8912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciatizacio -->
+        <test-method signature="Navegacion_Pag_Trello(java.lang.String,java.lang.String)[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:16:47 CLST" name="Navegacion_Pag_Trello" data-provider="getCredenciales" finished-at="2021-11-17T20:16:56 CLST" duration-ms="8354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testTrelloTecnova@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[trello123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navegacion_Pag_Trello -->
+        <test-method signature="crearTablero()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:16:56 CLST" name="crearTablero" finished-at="2021-11-17T20:17:13 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.Navegacion_Pag_Trello" duration-ms="17556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearTablero -->
+        <test-method signature="crearlista()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:13 CLST" name="crearlista" finished-at="2021-11-17T20:17:20 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.Navegacion_Pag_Trello, frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.crearTablero" duration-ms="6299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearlista -->
+        <test-method signature="agregarTarjeta()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:20 CLST" name="agregarTarjeta" finished-at="2021-11-17T20:17:23 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.crearlista" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarTarjeta -->
+        <test-method signature="agregarPropiedades()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:23 CLST" name="agregarPropiedades" finished-at="2021-11-17T20:17:26 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.agregarTarjeta" duration-ms="3157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarPropiedades -->
+        <test-method signature="addDescripTarj()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:26 CLST" name="addDescripTarj" finished-at="2021-11-17T20:17:26 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.agregarPropiedades" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDescripTarj -->
+        <test-method signature="addEtiqueta()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:26 CLST" name="addEtiqueta" finished-at="2021-11-17T20:17:27 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.addDescripTarj" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEtiqueta -->
+        <test-method signature="selectdate()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:27 CLST" name="selectdate" finished-at="2021-11-17T20:17:28 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.addEtiqueta" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectdate -->
+        <test-method signature="adjuntarImagen()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:28 CLST" name="adjuntarImagen" finished-at="2021-11-17T20:17:28 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.selectdate" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adjuntarImagen -->
+        <test-method signature="addComentario()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:28 CLST" name="addComentario" finished-at="2021-11-17T20:17:29 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.adjuntarImagen" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComentario -->
+        <test-method signature="moverTarjeta()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:29 CLST" name="moverTarjeta" finished-at="2021-11-17T20:17:29 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.addComentario" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moverTarjeta -->
+        <test-method signature="eliminarTablero()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto@3b0fe47a]" started-at="2021-11-17T20:17:29 CLST" name="eliminarTablero" finished-at="2021-11-17T20:17:30 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto.moverTarjeta" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarTablero -->
+      </class> <!-- frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto -->
+    </test> <!-- Test login correcto -->
+    <test started-at="2021-11-17T20:17:31 CLST" name="Test login incorrecto" finished-at="2021-11-17T20:17:46 CLST" duration-ms="15538">
+      <class name="frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto">
+        <test-method is-config="true" signature="iniciatizacio()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto@451001e5]" started-at="2021-11-17T20:17:31 CLST" name="iniciatizacio" finished-at="2021-11-17T20:17:39 CLST" duration-ms="7943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciatizacio -->
+        <test-method signature="BaseNavegacionPag(java.lang.String,java.lang.String)[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto@451001e5]" started-at="2021-11-17T20:17:39 CLST" name="BaseNavegacionPag" data-provider="getCredenciales" finished-at="2021-11-17T20:17:46 CLST" duration-ms="7570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testTrelloTecnova@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[trello1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BaseNavegacionPag -->
+        <test-method signature="obtenerValidacion()[pri:0, instance:frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto@451001e5]" started-at="2021-11-17T20:17:46 CLST" name="obtenerValidacion" finished-at="2021-11-17T20:17:46 CLST" depends-on-methods="frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto.BaseNavegacionPag" duration-ms="12" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Tableros | Trello] but found [Inicia sesión para continuar - Iniciar sesión con la cuenta de Atlassian]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Tableros | Trello] but found [Inicia sesión para continuar - Iniciar sesión con la cuenta de Atlassian]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto.obtenerValidacion(LoginIncorrecto.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerValidacion -->
+      </class> <!-- frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto -->
+    </test> <!-- Test login incorrecto -->
+  </suite> <!-- Pruebas Trello -->
+</testng-results>

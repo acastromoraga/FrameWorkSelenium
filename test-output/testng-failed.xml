@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Pruebas Trello]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="frameWorkAutomatizacionA_Castro.automatizacion.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test login incorrecto(failed)">
+    <classes>
+      <class name="frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto">
+        <methods>
+          <include name="BaseNavegacionPag"/>
+          <include name="obtenerValidacion"/>
+          <include name="iniciatizacio"/>
+        </methods>
+      </class> <!-- frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto -->
+    </classes>
+  </test> <!-- Test login incorrecto(failed) -->
+</suite> <!-- Failed suite [Pruebas Trello] -->
